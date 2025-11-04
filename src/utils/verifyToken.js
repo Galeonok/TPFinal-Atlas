@@ -1,0 +1,13 @@
+//"UTIL" para verificar tokens (Correcto y sin vencer)
+
+import jwt from 'jsonwebtoken';
+import { SECRET } from '../../config.js';
+
+export function verifyToken(token){
+    try {
+        const decoded = jwt.verify(token, SECRET);
+        return decoded;
+    } catch (error) {
+        throw new Error('Invalid token');
+    }
+}
