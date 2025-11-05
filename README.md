@@ -138,9 +138,7 @@ Los valores válidos para el campo status son:
 •	NOT AVAILABLE - Sin stock
 •	DISCONTINUED – Descontinuado
 
-Autenticación con JWT
-Para acceder a endpoints protegidos, incluye el token en el header:
-Authorization: Bearer <tu_token_jwt>
+
 
 Contacto
 Trabajo Práctico Final - UTN Backend
